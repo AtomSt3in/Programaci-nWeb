@@ -1,0 +1,84 @@
+/*Generales*/
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Fondo que evoca la esencia del Día de Muertos */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #673AB7;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  background-color: #673AB7;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: -10px;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+}
+
+button:hover::before {
+  left: calc(100% + 10px);
+  transition: left 500ms;
+}
+
+button:hover {
+  background-color: #8E44AD;
+}
+
+footer {
+  background-color: #673AB7;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+/*ID's*/
+#programa {
+  margin-top: 20px;
+}
+
+
+/*Clases*/
+.programa-item h3 {
+  color: #673AB7;
+}
+
+.programa-item p.info {
+  color: #555;
+  margin: 5px 0;
+}
+
+.programa-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container-button {
+  text-align: center;
+}

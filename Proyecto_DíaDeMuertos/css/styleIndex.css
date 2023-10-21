@@ -1,0 +1,47 @@
+body {
+  background-color: #000;
+  color: #ddd;
+}
+
+footer {
+  background-color: #4A235A;
+}
+
+/*Clases*/
+.navbar {
+  background-color: #4A235A;
+}
+
+.navbar-nav a {
+  transition: color 0.3s ease-in-out;
+  color: #fff;
+}
+
+.navbar-nav a:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+}
+
+.h1 {
+  color: #FFD700;
+  font-size: 40px; /* Ajustado para mejorar la consistencia */
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.h2 {
+  color: #FFA07A;
+  font-family: cursive;
+  font-size: 24px; /* Ajustado para mejorar la consistencia */
+  text-align: center;
+}
+
+.h3 {
+  color: #FFDAB9;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 20px;
+  line-height: 1.6;
+}
+
+
