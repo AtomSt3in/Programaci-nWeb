@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--BootStrap via CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styleIndex.css" rel="stylesheet" type="text/css" />
+    <title>PMI ¿QUÉ ES?</title>
+
+    <!--CSS para probar en movil-->
+    <style>
+      /*Independientes*/
+      body {
+        background-color: #afc3fc;
+        font-family: Arial, sans-serif;
+        font-size: large;
+        scroll-padding-top: 1.25rem;
+      }
+      p {
+        text-align: justify;
+        color: #040404;
+        font-family: Arial, sans-serif;
+        font-size: large;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 768px) {
+        p {
+          text-align: center;
+        }
+      }
+      a {
+        color: #eb11ebdc;
+        text-decoration: none;
+        text-align: center;
+        transition: color 0.4s ease-in-out;
+      }
+      a:hover {
+        color: #8f1ddbbe;
+      }
+
+      /*Clases*/
+      .navbar-nav a {
+        transition: color 0.3s ease-in-out;
+      }
+      .navbar-nav a:hover {
+        color: #ec9209f5;
+        transform: scale(1.1);
+      }
+      .links_a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+      .links_a:hover {
+        color: #0056b3;
+      }
+      .links_a {
+        color: #040404;
+        text-decoration: dashed;
+      }
+      .h1,
+      .h2 {
+        color: #040404;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: x-large;
+      }
+      .page-item a.page-link {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+      }
+      .page-item a.page-link:hover {
+        background-color: #0057b3dc;
+        border-color: #0057b3dc;
+      }
+      .page-item a.page-link {
+        font-weight: bold;
+      }
+      .pagination {
+        justify-content: center;
+      }
+
+      /*ID's*/
+      #id_PMI {
+        align-self: center;
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #id_table {
+        color: #040404;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+        margin: auto;
+        background-color: #afc3fc;
+      }
+      #pmiOficial {
+        margin-top: -0.5cm;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Barra desplegable-->
+    <div id="inicio">
+      <nav class="navbar bg-primary navbar-nav" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Proyecto WEB</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://www.pmi.org/"
+                  target="_blank"
+                  >Página oficial de PMI</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.pmi.org/pmi-educational-foundation/about-us"
+                  target="_blank"
+                  >Funciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="precios.html" target="_blank"
+                  >Precios</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contactame
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.facebook.com/profile.php?id=100008118645861"
+                      target="_blank"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/antonio_t19/"
+                      target="_blank"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--Imagen PMI-->
+    <div class="container py-4">
+      <div class="row">
+        <img
+          src="https://th.bing.com/th/id/R.b1a5f286b1947f3d230b5c715e83ee1b?rik=rYbZA%2bggr1sgBw&pid=ImgRaw&r=0"
+          id="id_PMI"
+          class="img-fluid"
+          alt="PMI Responsiva"
+        />
+      </div>
+    </div>
+
+    <!--Introducción-->
+    <div class="container">
+      <div class="row">
+        <p>
+          Tal vez estés pensando en obtener la prestigiosa certificación PMP®
+          pero puede que tengas dudas al respecto. Hay muchos acrónimos que
+          pueden confundirte como el PMI, PMP, PMBOK, etc. En este artículo te
+          voy a explicar detalladamente todo sobre el PMI, sobre el Project
+          Management Institute.
+        </p>
+        <p>
+          También puedes visualizar el siguiente diagrama realizado por mi
+          parte, el cuál te da únicamente palabras clave para una mejor idea:
+          <a
+            href="https://www.canva.com/design/DAFs2dmdc8Y/6AOhwUFvFKRpRy20asu2og/edit?utm_content=DAFs2dmdc8Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            target="_blank"
+            ><i>Proyecto en canva</i></a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--Tabla de contenido-->
+    <div class="container py-4">
+      <div class="table-responsive">
+        <table class="table table-primary table-striped">
+          <thead id="id_table">
+            <tr>
+              <th class="h1">Tabla de contenido</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <div>
+                    <b>
+                      <li>
+                        <a class="links_a" href="#que-es">¿QUÉ ES EL PMI?</a>
+                      </li>
+                      <li>
+                        <a class="links_a" href="#para-que">¿PARA QUÉ ES?</a>
+                      </li>
+                      <li>
+                        <a class="links_a" href="#ventajas"
+                          >¿QUÉ VENTAJAS TIENE SER MIEMBRO PMI?</a
+                        >
+                      </li>
+                    </b>
+                  </div>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--¿Qué es?-->
+    <div class="container container-fluid">
+      <div class="row">
+        <p class="h2" id="que-es"><b>¿Qué es el PMI?</b></p>
+        <p>
+          El PMI o Project Management Institute es la asociación profesional
+          líder en dirección de proyectos. Es todo un referente a nivel mundial
+          con una comunidad creciente de millones de profesionales que utilizan
+          las habilidades directivas para conseguir valor en sus organizaciones.
+          Colectivamente estos profesionales crean de forma continua mejores
+          resultados para organizaciones, comunidades y la sociedad en general.
+        </p>
+        <a href="https://www.pmi.org/" id="pmiOficial" target="_blank"
+          >Puedes conocer más sobre cómo trabajan y sus cientos de practicantes
+          aquí.</a
+        >
+      </div>
+    </div>
+
+    <!--¿Para qué?-->
+    <div class="container container-fluid">
+      <div class="row">
+        <p class="h2" id="para-que"><b>¿Para qué sirve?</b></p>
+        <p>
+          El Project Management Institute realiza una gran variedad de
+          actividades entre las cuales destacan:
+        </p>
+        <div>
+          <ol>
+            <li>
+              Publicación de estándares globales sobre dirección de proyectos.
+              En este sentido el más conocido es el Project Management Body of
+              Knowledge o también conocido como PMBOK®.
+            </li>
+            <li>
+              Certificaciones profesionales. Emisión de más de 8 certificaciones
+              profesionales que reconocen el conocimiento y las competencias en
+              dirección de proyectos como la prestigiosa certificación PMP®.
+            </li>
+            <li>
+              Las relacionadas con la educación y la formación continua de
+              profesionales en dirección de proyectos mediante eventos en vivo,
+              eventos virtuales, seminarios y cursos.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!--ventajas-->
+    <div class="container container-fluid">
+      <div class="row">
+        <p class="h2" id="ventajas"><b>Ventajas de ser miembro PMI</b></p>
+        <p>
+          Al ser miembro del Project Management Institute puedes disfrutar de
+          numerosas ventajas como las que te listo a continuación:
+        </p>
+        <div>
+          <ul>
+            <li>
+              Ser parte de la comunidad más grande de directores de proyecto.
+            </li>
+            <li>Descargar de forma gratuita el PMBOK®.</li>
+            <li>Acceder de a la plataforma de conocimiento PMIStandard+TM .</li>
+            <li>Acceso a más de 1.000 herramientas y plantillas.</li>
+            <li>Obtención de PDUs de forma gratuita.</li>
+            <li>Descuentos en las certificaciones del PMI.</li>
+            <li>Acceso a bolsa de trabajo.</li>
+            <li>Acceso a publicaciones especializadas.</li>
+            <li>
+              Oportunidad de ingresar en capítulos locales para oportunidades de
+              educación y networking.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Volver a inicio-->
+    <div class="container container-fluid">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#inicio">Volver al inicio</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
